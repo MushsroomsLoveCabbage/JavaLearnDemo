@@ -29,7 +29,7 @@ public class ProxyFactory {
 		return Proxy.newProxyInstance(target.getClass().getClassLoader(),
 				target.getClass().getInterfaces(), 
 				new InvocationHandler() {
-
+			        
 					@Override
 					public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 						System.out.println("前置事物");
