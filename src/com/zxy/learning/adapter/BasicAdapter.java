@@ -18,7 +18,7 @@ public abstract class BasicAdapter implements BasicFactory{
 
 	@Override
 	public void run() {
-		
+		String demo = "demo";
 		
 	}
 
