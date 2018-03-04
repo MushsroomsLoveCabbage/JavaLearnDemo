@@ -23,6 +23,28 @@ public class DifferenceOfCompare {
 		a = "21345";
 		System.out.println(b);
 		
+		String test1 = "adc";
+		String test2 = "adc";
+		String test3 = new String("adc");
+		String test4 = "ad" + "c";
+		System.out.println(test1 == test2);
+		System.out.println(test2 == test3);
+		System.out.println(test3 == test4);
+		System.out.println(test1 == test4);
+		
 	}
+	public void CompareString(){
+		String a = "abc";
+		StringBuilder sb = new StringBuilder("sb");
+		StringBuffer sf = new StringBuffer("sf");
+		switch(a){
+		case "abc" :
+			StringBuilder newSb = new StringBuilder("123");
+		case "efg" : 
+			StringBuilder newtest = new StringBuilder("435");
+		}
+	}
+	
+	
 	
 }

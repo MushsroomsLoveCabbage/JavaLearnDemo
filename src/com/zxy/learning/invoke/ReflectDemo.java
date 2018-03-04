@@ -7,12 +7,12 @@ import java.lang.reflect.Method;
 public class ReflectDemo {
 	public static void main(String[] args) throws Exception{
 		User user = new User(1,"zxy","huaian");
-		Object newUser = copyObject(user);
-		
+		Object newUser = copyObject(user);		
 		System.out.println(newUser.toString());
 	}
 	public static Object copyObject(Object obj) throws Exception{
 		Class  clazz = obj.getClass();
+		System.out.println(obj.getClass().getName());
 		Field[] fields = clazz.getDeclaredFields();
 	    Constructor<? extends Object> constructor = clazz.getConstructor(new Class[]{});
 	    Object instance = constructor.newInstance(new Object[]{});

@@ -5,6 +5,11 @@ public class User {
 	private String name;
 	private String address;
 	
+	@Override
+	public String toString(){
+		return getId() + "/" + getAddress();
+		
+	}
 	public User() {
 		super();
 	}
