@@ -3,7 +3,7 @@
  * 
  * 
  */
-package com.zxy.learning.proxy;
+package com.zxy.learning.designPattern.proxy;
 
 /**
  * Description Of The Class<br/>

@@ -7,7 +7,7 @@ package com.zxy.learning.adapter;
 
 /**
  * Description Of The Class<br/>
- * 
+ * 适配器模式
  * 
  * @author zxy
  * @Connect Mail:1363320658@qq.com

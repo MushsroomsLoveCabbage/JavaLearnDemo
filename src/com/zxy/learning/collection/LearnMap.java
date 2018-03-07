@@ -15,10 +15,11 @@ public class LearnMap {
 		hashmap.put(null, null);
 		System.out.println(value);
 		Map<String, String> hashtable = new Hashtable<String, String>();
-		hashtable.put(null, null);
-		
+		hashtable.put(null, null);		
 		Map<String, String> treeMap = new TreeMap<String, String>();
 		Set<String> treeSet =  new TreeSet<String>();
+		Set<Student> set = new TreeSet<Student>();
+		Map<Teacher,String> map = new TreeMap<Teacher, String>();
 		
 	}
 }

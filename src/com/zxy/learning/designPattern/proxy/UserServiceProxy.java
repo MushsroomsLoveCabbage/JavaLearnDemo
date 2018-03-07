@@ -3,7 +3,7 @@
  * 
  * 
  */
-package com.zxy.learning.proxy;
+package com.zxy.learning.designPattern.proxy;
 
 /**
  * Description Of The Class<br/>
@@ -16,8 +16,8 @@ package com.zxy.learning.proxy;
  */
 public class UserServiceProxy implements UserService{
 	private UserService userService;
-	public UserServiceProxy(UserService userService) {
-		this.userService = userService;
+	public UserServiceProxy() {
+		this.userService = new UserServiceImpl();
 	}
 	@Override
 	public void getUser(String arg) {

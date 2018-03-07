@@ -3,7 +3,7 @@
  * 
  * 
  */
-package com.zxy.learning.singleton;
+package com.zxy.learning.designPattern.singleton;
 
 /**
  * 双重校验加锁
@@ -17,16 +17,16 @@ package com.zxy.learning.singleton;
  * @version 1.0.0, 2017年12月12日-上午9:35:36
  * @since 2017年12月12日-上午9:35:36
  */
-public class SingletonDemoFive {
-	private volatile static SingletonDemoFive singleton;
-	private SingletonDemoFive() {
+public class DoubleCheckLock {
+	private volatile static DoubleCheckLock singleton;
+	private DoubleCheckLock() {
 		
 	}
-	public static SingletonDemoFive getInstance() {
+	public static DoubleCheckLock getInstance() {
 		if(singleton == null) {
-			synchronized (SingletonDemoFive.class) {
+			synchronized (DoubleCheckLock.class) {
 				if(singleton == null) {
-					singleton = new SingletonDemoFive();
+					singleton = new DoubleCheckLock();
 				}
 			}
 		}

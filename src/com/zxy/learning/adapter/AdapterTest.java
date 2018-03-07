@@ -7,6 +7,8 @@ package com.zxy.learning.adapter;
 
 /**
  * Description Of The Class<br/>
+ * 适配器模式，
+ * 将某个类，接口，对象，转换成我们需要的类！（）
  * 
  * 
  * @author zxy

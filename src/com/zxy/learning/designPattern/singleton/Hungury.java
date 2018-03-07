@@ -3,27 +3,27 @@
  * 
  * 
  */
-package com.zxy.learning.singleton;
+package com.zxy.learning.designPattern.singleton;
 
 /**
  * Description Of The Class<br/>
  * 
- * 
+ * 饿汉式，静态代码块
  * @author zxy
  * @Connect Mail:1363320658@qq.com
  * @version 1.0.0, 2017年12月12日-上午9:30:07
  * @since 2017年12月12日-上午9:30:07
  */
-public class SingletonDemoFour {
-	private static SingletonDemoFour instance = null;
+public class Hungury {
+	private static Hungury instance = null;
 	static {
-		instance = new SingletonDemoFour();
+		instance = new Hungury();
 	}
-	private SingletonDemoFour() {
+	private Hungury() {
 		
 	}
-	public SingletonDemoFour getInstance() {
-		return this.instance;
+	public Hungury getInstance() {
+		return instance;
 	}
 }
 

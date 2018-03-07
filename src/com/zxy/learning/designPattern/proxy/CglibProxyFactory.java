@@ -3,7 +3,7 @@
  * 
  * 
  */
-package com.zxy.learning.proxy;
+package com.zxy.learning.designPattern.proxy;
 
 import java.lang.reflect.Method;
 

@@ -2,6 +2,11 @@ package com.zxy.learning.basic;
 
 public class StringBasic {
 	public static void main(String[] args){
+		
+		String a = "abc";
+		String b = "abc";
+		System.out.println(a.equals(b));
+		
 		String str = new StringBuilder("go").append("od").toString();
 		//System.out.println(str.intern() ==  str);
 		

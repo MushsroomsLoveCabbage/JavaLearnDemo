@@ -3,7 +3,7 @@
  * 
  * 
  */
-package com.zxy.learning.proxy;
+package com.zxy.learning.designPattern.proxy;
 
 /**
  * Description Of The Class<br/>
@@ -16,11 +16,9 @@ package com.zxy.learning.proxy;
  */
 public class UserServiceTest {
 	public static void main(String[] args) {
-		//普通代理方式
-		/*UserService userService = new UserServiceImpl();
-		UserServiceProxy userServiceProxy = new UserServiceProxy(userService);
-		userServiceProxy.getUser();*/
-		
+		//普通代理模式
+		UserService userService = new UserServiceProxy();
+		userService.getUser("111");		
 		//JDK动态代理
 		/*UserService userService = new UserServiceImpl();
 		System.out.println(userService.getClass());		
@@ -29,7 +27,7 @@ public class UserServiceTest {
 		String arg = "tesla";
 		proxy.getUser(arg);*/
 		
-		UserService userService = new UserServiceImpl();
+		
 		 //代理对象
 		UserServiceImpl proxy = (UserServiceImpl)new CglibProxyFactory(userService).getProxyInstance();
         //执行代理对象的方法
