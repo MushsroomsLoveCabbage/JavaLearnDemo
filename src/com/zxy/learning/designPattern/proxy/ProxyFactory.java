@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**动态代理  
- * 代理对象不需要实现接口,但是目标对象一定要实现接口,否则不能用动态代理
+ * 代理对象不需要实现接口,但是目标对象一定要实现接口,否则不能用jdk动态代理
  * Description Of The Class<br/>
  * 
  * 
@@ -32,9 +32,9 @@ public class ProxyFactory {
 			        
 					@Override
 					public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-						System.out.println("前置事物");
+						System.out.println("前置操作");
 						Object returnValue = method.invoke(target, args);
-						System.out.println("后置事物");
+						System.out.println("后置操作");
 						return returnValue;
 					}
 			

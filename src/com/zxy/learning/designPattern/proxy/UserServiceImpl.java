@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public void getUser(String arg) {
-		System.out.println("获取到用户!");	
+		System.out.println("获取到用户!" + arg);	
 	}
 	
 }

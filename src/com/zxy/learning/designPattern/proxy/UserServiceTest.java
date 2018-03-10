@@ -17,22 +17,23 @@ package com.zxy.learning.designPattern.proxy;
 public class UserServiceTest {
 	public static void main(String[] args) {
 		//普通代理模式
-		UserService userService = new UserServiceProxy();
-		userService.getUser("111");		
-		//JDK动态代理
-		/*UserService userService = new UserServiceImpl();
-		System.out.println(userService.getClass());		
-		UserService proxy = (UserService)new ProxyFactory(userService).getProxyInstance();
-		System.out.println(proxy.getClass());
+		//UserService userService = new UserServiceProxy();
+		//userService.getUser("111");	
+		
 		String arg = "tesla";
-		proxy.getUser(arg);*/
+		//JDK动态代理
+		//需要目标对象实现接口
+		
+		
+		UserService userService = new UserServiceImpl();
+		UserService jdkProxy = (UserService)new ProxyFactory(userService).getProxyInstance();	
+		jdkProxy.getUser(arg);
 		
 		
 		 //代理对象
-		UserServiceImpl proxy = (UserServiceImpl)new CglibProxyFactory(userService).getProxyInstance();
+		UserServiceImpl cglibProxy = (UserServiceImpl)new CglibProxyFactory(userService).getProxyInstance();
         //执行代理对象的方法
-		String arg = "tesla";
-		proxy.getUser(arg);
+		cglibProxy.getUser(arg);
 		
 		
 	}
