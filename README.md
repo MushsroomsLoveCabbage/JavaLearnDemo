@@ -1,2 +1,2 @@
-# JavaLearnDemo
-java 的学习demo 
+# Java Basic Learn
+java基础内容的学习
