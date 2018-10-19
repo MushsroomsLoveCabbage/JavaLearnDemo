@@ -2,6 +2,7 @@ package com.zxy.learning.designPattern.factory;
 
 /**
  * 静态工厂模式
+ * 根据不同的需要 生产特定的对象
 * @ClassName: Test
 * @Description: TODO(这里用一句话描述这个类的作用)
 * @author zxy 1363320658@qq.com
@@ -10,7 +11,8 @@ package com.zxy.learning.designPattern.factory;
  */
 public class Test {
 	public static void main(String[] args){
-		Sender se = Factory.produceMail();
+		Factory factory = new Factory();
+		Sender se = factory.produce("mail");
 		se.send();
 	}
 }
