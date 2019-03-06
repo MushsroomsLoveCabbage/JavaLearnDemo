@@ -19,15 +19,20 @@ import java.util.Map.Entry;
  * @since 2017年10月30日-下午5:13:42
  */
 public class CacheManager {
+
 	private static HashMap cacheMap = new HashMap();
+
 	private Float val = null;
+
 	private CacheManager() {
 		super();
 	}
+
 	//获取布尔值的缓存
 	public static boolean getSimpleFlag(String key){
 		return (boolean)cacheMap.get(key);
 	}
+
 	public static long getServerStartdt(String key) {
 		return (Long)cacheMap.get(key);
 	}

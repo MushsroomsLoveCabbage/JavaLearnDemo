@@ -19,7 +19,7 @@ public class UserServiceTest {
 		//普通代理模式
 		//UserService userService = new UserServiceProxy();
 		//userService.getUser("111");	
-		
+	/*
 		String arg = "tesla";
 		//JDK动态代理
 		//需要目标对象实现接口
@@ -35,7 +35,7 @@ public class UserServiceTest {
         //执行代理对象的方法
 		cglibProxy.getUser(arg);
 		
-		
+		*/
 	}
 }
 

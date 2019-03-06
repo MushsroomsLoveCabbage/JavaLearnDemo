@@ -14,10 +14,14 @@ package com.zxy.learning.cache;
  * @since 2017年10月30日-下午5:12:07
  */
 public class Cache {
+
 	private String key; //缓存ID
+
 	private Object val; //缓存数据
+
 	private Long timeOut; //更新时间
-	private boolean expired; //是否终止
+
+	private boolean expired; //有效时长
 	
 	public Cache() {
 		super();		
@@ -34,24 +38,31 @@ public class Cache {
 	public String getKey() {
 		return key;
 	}
+
 	public void setKey(String key) {
 		this.key = key;
 	}
+
 	public Object getVal() {
 		return val;
 	}
+
 	public void setVal(Object val) {
 		this.val = val;
 	}
+
 	public Long getTimeOut() {
 		return timeOut;
 	}
+
 	public void setTimeOut(Long timeOut) {
 		this.timeOut = timeOut;
 	}
+
 	public boolean isExpired() {
 		return expired;
 	}
+
 	public void setExpired(boolean expired) {
 		this.expired = expired;
 	}

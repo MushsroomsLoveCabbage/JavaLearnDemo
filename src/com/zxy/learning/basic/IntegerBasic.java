@@ -5,11 +5,19 @@ package com.zxy.learning.basic;
  *
  */
 public class IntegerBasic {
-	
-	private static final int int_1000000 = 1_000_000; //100W的方便阅读写
-	private static final int int_8_8 = 010;   //8进制表达方式 0
-	private static final int int_2_2 = 0b10;  //2进制表达方式  0B/0b
-	private static final int int_16_16 = 0x10; //16进制表达方式  0X/0x
+
+	//100W的方便阅读写
+	private static final int int_1000000 = 1_000_000;
+
+	//8进制表达方式 0
+	private static final int int_8_8 = 010;
+
+	//2进制表达方式  0B/0b
+	private static final int int_2_2 = 0b10;
+
+	//16进制表达方式  0X/0x
+	private static final int int_16_16 = 0x10;
+
 	public static void main(String[] args){
 	/*	Integer a = new Integer(3);
 		Integer.valueOf(a);*/
@@ -29,6 +37,9 @@ public class IntegerBasic {
 		System.out.println(int_8_8 +"---------"+ int_10);
 		System.out.println(int_2_2 +"---------"+ int_10);
 		System.out.println(int_16_16 +"---------"+ int_10);
+
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
 		
 	}
 	
