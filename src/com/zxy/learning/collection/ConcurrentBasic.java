@@ -15,7 +15,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 public class ConcurrentBasic {
 	public static void main(String[] args){
-		Map<String, String> map = new ConcurrentHashMap<String, String>();
-		AbstractQueue<String> queue = new ConcurrentLinkedQueue<String>();
+		Map<String, String> map = new ConcurrentHashMap<>(32);
+		map.put("1", "1");
+		map.get("1");
+		AbstractQueue<String> queue = new ConcurrentLinkedQueue<>();
 	}
 }

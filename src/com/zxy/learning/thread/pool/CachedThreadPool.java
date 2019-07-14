@@ -1,11 +1,20 @@
 package com.zxy.learning.thread.pool;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class CachedThreadPool {
 	public static void main(String[] args){
-		ExecutorService pool = Executors.newCachedThreadPool();
+		ThreadFactory threadFactory = new ThreadFactory() {
+			@Override
+			public Thread newThread(Runnable r) {
+				return null;
+			}
+		};
+		ExecutorService pool = new ThreadPoolExecutor(1, Integer.MAX_VALUE,
+				60L, TimeUnit.SECONDS,
+				new SynchronousQueue<>());
+
+		ExecutorService threadPool = Executors.newCachedThreadPool();
 		//创建实现了Runnable 接口对象
 		Thread t1 = new MyThread();
 		t1.setName("t1");

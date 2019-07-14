@@ -21,10 +21,13 @@ package com.zxy.learning.designPattern.singleton;
  * @since 2017年12月12日-上午9:35:36
  */
 public class DoubleCheckLock {
+
 	private volatile static DoubleCheckLock singleton;
+
 	private DoubleCheckLock() {
 		
 	}
+
 	public static DoubleCheckLock getInstance() {
 		if(singleton == null) {
 			synchronized (DoubleCheckLock.class) {

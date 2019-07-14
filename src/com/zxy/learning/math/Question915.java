@@ -1,6 +1,7 @@
 package com.zxy.learning.math;
 
 public class Question915 {
+
 	public static void main(String[] args) {
 		int[] A = { 5, 0, 3, 4, 2, 5, 1, 9, 6, 8 };
 		partitionDisjoint(A);

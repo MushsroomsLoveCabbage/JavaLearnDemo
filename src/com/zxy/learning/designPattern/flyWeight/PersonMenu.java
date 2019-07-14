@@ -22,8 +22,9 @@ public class PersonMenu implements Menu{
 		List dishList  = new ArrayList();
 		Iterator it = list.iterator();
 		while(it.hasNext()) {
-			if(person.equals((String)it.next()))
+			if(person.equals((String)it.next())) {
 				dishList.add(it.next());
+			}
 		}
 		return dishList;
 	}
