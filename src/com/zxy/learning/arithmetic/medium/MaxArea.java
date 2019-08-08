@@ -1,4 +1,4 @@
-package com.zxy.learning.arithmetic.simple.medium;
+package com.zxy.learning.arithmetic.medium;
 
 /**
  * @author zxy

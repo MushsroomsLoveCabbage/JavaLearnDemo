@@ -11,14 +11,13 @@ public class IOBasic {
 		System.out.println(count);
 	}
 	/**
-	 * 在文件中查找某个字符串出现次数
-	* @Title: countWordInFile 
-	* @Description: TODO(这里用一句话描述这个方法的作用) 
-	* @param @param fileName
-	* @param @param word
-	* @param @return    设定文件 
-	* @return int    返回类型 
-	* @throws
+	 * @Title: countWordInFile 
+	 * @Description: 在文件中查找某个字符串出现次数
+	 * @param @param fileName
+	 * @param @param word
+ 	 * @param @return    设定文件 
+	 * @return int    返回类型 
+	 * @throws
 	 */
 	public static int countWordInFile(String fileName, String word) {
 		int count = 0;

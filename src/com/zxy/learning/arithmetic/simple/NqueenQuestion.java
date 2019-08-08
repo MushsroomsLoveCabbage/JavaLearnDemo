@@ -4,7 +4,7 @@ package com.zxy.learning.arithmetic.simple;
  * @author zxy
  * @version 1.0.0
  * @ClassName NqueenQuestion.java
- * @Description TODO
+ * @Description
  * @createTime 2019年03月15日 18:29:00
  */
 public class NqueenQuestion {
