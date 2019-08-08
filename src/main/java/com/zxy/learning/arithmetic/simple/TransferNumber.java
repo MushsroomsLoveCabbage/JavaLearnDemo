@@ -4,7 +4,7 @@ package com.zxy.learning.arithmetic.simple;
  * @author zxy
  * @version 1.0.0
  * @ClassName TransferNumber.java
- * @Description TODO 翻转整数，https://leetcode-cn.com/problems/reverse-integer
+ * @Description 翻转整数，https://leetcode-cn.com/problems/reverse-integer
  * @createTime 2019年03月04日 11:25:00
  */
 public class TransferNumber {

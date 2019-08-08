@@ -91,10 +91,8 @@ public class ReflectClass {
 			Method mod = class01.getMethod("setName", String.class);
 			mod.invoke(class01.newInstance(),"zxy");
 		} catch (NoSuchMethodException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block

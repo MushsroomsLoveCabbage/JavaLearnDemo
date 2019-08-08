@@ -1,4 +1,4 @@
-package com.zxy.learning.arithmetic.simple.medium;
+package com.zxy.learning.arithmetic.medium;
 
 import java.util.*;
 
@@ -17,7 +17,7 @@ public class ThreeSum {
             for(Integer obj :temp){
                 System.out.print(obj + ",");
             }
-            System.out.println("--------");
+            System.out.println(" ");
         }
     }
     public static int LIMIT_LENGTH = 3;
@@ -30,22 +30,21 @@ public class ThreeSum {
         }
         Arrays.sort(nums);
         for(int one = 0; one < length - 2; one++){
-            int two = one + 1, three = length - 1, target = -nums[one];
+            int two = one + 1, three = length - 1, target = - nums[one];
             while(two < three){
                 int sum = nums[two] + nums[three];
                 if(sum == target){
-                    two++;
-                    three--;
                     List<Integer> single = new ArrayList<>();
                     single.add(nums[one]);
                     single.add(nums[two]);
                     single.add(nums[three]);
                     result.add(single);
+                    two++;
+                    three--;
                 } else if(sum < target){
                     two++;
                 } else {
                     three--;
-                    break;
                 }
             }
         }

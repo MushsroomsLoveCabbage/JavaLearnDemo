@@ -1,5 +1,10 @@
 package com.zxy.learning.compare;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  *  == 与 equals的区别
  *  == 对象比较内存地址， 
@@ -11,7 +16,29 @@ package com.zxy.learning.compare;
 *
  */
 public class DifferenceOfCompare {
+	
 	public static void main(String[] args){
+		List<Long> list = new ArrayList<Long>();
+		list.add(1L);
+		list.add(10L);
+		list.add(11L);
+		list.add(11L);
+		list.add(100L);
+		list.add(1000000000L);	
+		list.add(10L);
+		list.add(1110L);
+		list.add(130L);
+		list.add(1150L);
+		list.add(1000000000000000L); 
+		list.add(10000L);
+		 Collections.sort(list, new Comparator<Long>() {
+	            @Override
+	            public int compare(Long o1, Long o2) {
+	                return (int) (o2- o1);
+	            }
+	        });
+		 
+		System.out.println(list.toString());
 		String a = "123";	
 		String b = a;
 		String c = new String("123");		
@@ -45,6 +72,8 @@ public class DifferenceOfCompare {
 		}
 	}
 	
+	
+
 	
 	
 }

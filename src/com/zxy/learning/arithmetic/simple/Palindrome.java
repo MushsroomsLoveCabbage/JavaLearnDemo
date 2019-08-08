@@ -4,7 +4,7 @@ package com.zxy.learning.arithmetic.simple;
  * @author zxy
  * @version 1.0.0
  * @ClassName Palindrome.java
- * @Description TODO https://leetcode-cn.com/problems/palindrome-number/
+ * @Description https://leetcode-cn.com/problems/palindrome-number/
  * @createTime 2019年03月06日 16:02:00
  */
 public class Palindrome {

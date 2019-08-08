@@ -4,7 +4,7 @@ package com.zxy.learning.arithmetic.simple;
  * @author zxy
  * @version 1.0.0 从最后开始赋值。
  * @ClassName MergeTwoArray.java
- * @Description TODO https://leetcode-cn.com/problems/merge-sorted-array/
+ * @Description https://leetcode-cn.com/problems/merge-sorted-array/
  * @createTime 2019年03月06日 10:19:00
  */
 public class MergeTwoArray {
