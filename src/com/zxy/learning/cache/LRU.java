@@ -7,7 +7,7 @@ import java.util.Map;
  * @author zxy
  * @version 1.0.0
  * @ClassName LRU.java
- * @Description TODO
+ * @Description LRU 缓存 (对于周期性的，偶然性的数据，命中率不高，缓存污染(没起到很好的缓存作用)严重)
  * @createTime 2019年03月06日 20:55:00
  */
 public class LRU<K, V> {
@@ -27,7 +27,6 @@ public class LRU<K, V> {
 
             @Override
             protected boolean removeEldestEntry(Map.Entry eldest) {
-
                 return size() > LRU.this.cacheSize;
             }
         };

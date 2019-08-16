@@ -1,4 +1,4 @@
-package com.zxy.learning.designPattern.brigdge;
+package com.zxy.learning.designPattern.bridge;
 
 /**
  * 桥接模式 

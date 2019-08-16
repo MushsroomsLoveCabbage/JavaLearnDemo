@@ -1,14 +1,14 @@
 package com.zxy.learning.designPattern.adapter;
 
 /**
- * 目标类
- * @author Administrator
- *
+ * @author zxy
+ * @version 1.0.0
+ * @ClassName Target.java
+ * @Description
+ * @createTime 2019年08月17日 02:44:00
  */
 public interface Target {
-	
-	public void method01();
-	
-	public void method02();
-	
+
+    int provideSpecial();
+
 }

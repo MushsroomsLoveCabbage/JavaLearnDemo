@@ -1,6 +1,7 @@
-package com.zxy.learning.designPattern.brigdge;
+package com.zxy.learning.designPattern.bridge;
 
 public abstract class Bridge {
+
 	private Sourceable source;
 	
 	public Sourceable getSource() {
@@ -10,7 +11,8 @@ public abstract class Bridge {
 	public void setSource(Sourceable source) {
 		this.source = source;
 	}
-	
+
+
 	public void method(){
 		source.method();
 	}

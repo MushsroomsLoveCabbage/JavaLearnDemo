@@ -3,6 +3,7 @@ package com.zxy.learning.designPattern.Decoratee;
 public class Decorater implements Sourceable{
 	
 	private Sourceable source;
+
 	public Decorater(Sourceable source){
 		super();
 		this.source = source;

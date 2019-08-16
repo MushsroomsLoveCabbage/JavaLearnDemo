@@ -1,4 +1,4 @@
-package com.zxy.learning.designPattern.brigdge;
+package com.zxy.learning.designPattern.bridge;
 
 public class MyBridge extends Bridge{
 	public void method(){
