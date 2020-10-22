@@ -3,7 +3,7 @@ package com.zxy.learning.jvm;
 import java.lang.reflect.Field;
 
 /**
- *
+
  * @author zxy
  * @version 1.0.0
  * @ClassName StringTest.java
@@ -30,6 +30,8 @@ public class StringClassTest {
         int j = 2;
         int k = 3;
         //使用静态变量
+        //  jvm 执行参考 (具体可以看The Java® Virtual Machine Specification)
+        // https://www.jianshu.com/p/1ad68e2b8cc1
         /**
          *        6: new           #5                  // class java/lang/StringBuilder
          *        9: dup
